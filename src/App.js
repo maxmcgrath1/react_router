@@ -10,14 +10,15 @@ import Nav from "./components/nav";
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Nav />
-        <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/" element={<Main />} />
-          <Route path="/" element={<Main />} />
-        </Routes>
-      </Router>
+      <Nav />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/price" element={<Price />} />
+          <Route path="/price/:symbol"
+          render={(routerProps) => <Price {...routerProps} />}
+          />
+        <Route path="/currencies" element={<Currencies />} />
+      </Routes>
     </div>
   );
 }
