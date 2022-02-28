@@ -14,6 +14,8 @@ function App() {
         <Nav />
         <Routes>
           <Route path="/" element={<Main />} />
+          <Route path="/" element={<Main />} />
+          <Route path="/" element={<Main />} />
         </Routes>
       </Router>
     </div>
