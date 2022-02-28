@@ -2,8 +2,8 @@ import React from 'react'
 
 const Main = () => {
     return (
-        <div>M</div>
+      <h1>This is the Main Component</h1>
   )
 }
 
-export default M
+export default Main;
