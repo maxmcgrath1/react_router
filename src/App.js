@@ -13,10 +13,9 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/price" element={<Price />} />
-          <Route path="/price/:symbol"
-          render={(routerProps) => <Price {...routerProps} />}
-          />
+        <Route path="/price" element={<Price />}>
+          <Route path=":symbol" element={<Price />} />
+        </Route>
         <Route path="/currencies" element={<Currencies />} />
       </Routes>
     </div>

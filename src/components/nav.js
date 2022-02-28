@@ -7,7 +7,7 @@ const Nav = (props) => {
             <Link to="/">
                 <div>HOME</div>
             </Link>
-            <Link to="/prices">
+            <Link to="/price">
                 <div>CRYPTO PRICES</div>
             </Link>
             <Link to="/currencies">
